@@ -1627,3 +1627,287 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2026.10.17-00.19.56:425][234]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
 [2026.10.17-00.19.57:608][234]LogUObjectHash: Compacting FUObjectHashTables data took   5.53ms
 [2026.10.17-00.19.57:650][234]LogAutomationController: Ignoring very large delta of 3.88 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2026.10.17-00.21.28:938][537]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2127.336914
+[2026.10.17-00.21.29:941][540]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.10.17-00.21.29:942][540]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2127.993652, Update Interval: 311.314423
+[2026.10.17-00.22.25:236][773]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.10.17-00.22.25:295][773]LogUMGEditor: Disabling Slate Post Buffers for multi-window PIE session, currently not supported.
+[2026.10.17-00.22.25:313][773]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.10.17-00.22.25:332][773]LogPlayLevel: Creating play world package: /Game/Variant_Platforming/UEDPIE_0_Level_1
+[2026.10.17-00.22.25:419][773]LogPlayLevel: PIE: StaticDuplicateObject took: (0.084358s)
+[2026.10.17-00.22.25:419][773]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Variant_Platforming/Level_1.Level_1 to /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1 (0.086566s)
+[2026.10.17-00.22.25:616][773]LogUObjectHash: Compacting FUObjectHashTables data took   3.30ms
+[2026.10.17-00.22.25:630][773]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.10.17-00.22.25:683][773]LogPlayLevel: PIE: World Init took: (0.055559s)
+[2026.10.17-00.22.25:688][773]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2026.10.17-00.22.25:692][773]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.10.17-00.22.25:692][773]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.10.17-00.22.25:693][773]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.10.17-00.22.25:693][773]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.10.17-00.22.25:693][773]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.10.17-00.22.25:693][773]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.10.17-00.22.25:693][773]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.10.17-00.22.25:693][773]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.10.17-00.22.25:696][773]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.10.17-00.22.25:696][773]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.10.17-00.22.25:696][773]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.10.17-00.22.25:714][773]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.10.17-00.22.25:745][773]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+[2026.10.17-00.22.25:756][773]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.10.17-00.22.25:756][773]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.10.17-00.22.25:757][773]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.10.17-00.22.25:766][773]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=6
+[2026.10.17-00.22.25:766][773]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=6
+[2026.10.17-00.22.25:774][773]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=6
+[2026.10.17-00.22.25:774][773]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=6
+[2026.10.17-00.22.25:774][773]LogInit: FAudioDevice initialized with ID 6.
+[2026.10.17-00.22.25:774][773]LogAudio: Display: Audio Device (ID: 6) registered with world 'Level_1'.
+[2026.10.17-00.22.25:776][773]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 6
+[2026.10.17-00.22.25:854][773]LogLoad: Game class is 'BP_PlatformingGameMode_C'
+[2026.10.17-00.22.25:878][773]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1 up for play (max tick rate 60) at 2026.10.16-17.22.25
+[2026.10.17-00.22.25:897][773]LogOnline: OSS: Created online subsystem instance for: :Context_21
+[2026.10.17-00.22.25:902][773]LogWorld: Bringing up level for play took: 0.043896
+[2026.10.17-00.22.26:052][773]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2026.10.17-00.22.26:052][773]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2026.10.17-00.22.26:055][773]LogPushModel: PushModel HandleCreation is now enabled
+[2026.10.17-00.22.26:055][773]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.10.17-00.22.26:063][773]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2026.10.17-00.22.26:063][773]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2026.10.17-00.22.26:065][773]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.10.17-00.22.26:067][773]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4 IpNetDriver listening on port 17777
+[2026.10.17-00.22.26:114][773]PIE: Server logged in
+[2026.10.17-00.22.26:130][773]PIE: Play in editor total start time 0.841 seconds.
+[2026.10.17-00.22.26:135][773]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.10.17-00.22.26:149][773]LogPlayLevel: PIE: World Init took: (0.012612s)
+[2026.10.17-00.22.26:152][773]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2026.10.17-00.22.26:152][773]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.10.17-00.22.26:152][773]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.10.17-00.22.26:154][773]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.10.17-00.22.26:154][773]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.10.17-00.22.26:154][773]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.10.17-00.22.26:154][773]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.10.17-00.22.26:154][773]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.10.17-00.22.26:154][773]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.10.17-00.22.26:154][773]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.10.17-00.22.26:154][773]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.10.17-00.22.26:154][773]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.10.17-00.22.26:167][773]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.10.17-00.22.26:214][773]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+[2026.10.17-00.22.26:234][773]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.10.17-00.22.26:234][773]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.10.17-00.22.26:234][773]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.10.17-00.22.26:244][773]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=7
+[2026.10.17-00.22.26:244][773]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=7
+[2026.10.17-00.22.26:254][773]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=7
+[2026.10.17-00.22.26:254][773]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=7
+[2026.10.17-00.22.26:254][773]LogInit: FAudioDevice initialized with ID 7.
+[2026.10.17-00.22.26:254][773]LogAudio: Display: Audio Device (ID: 7) registered with world 'Untitled'.
+[2026.10.17-00.22.26:254][773]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 7
+[2026.10.17-00.22.26:363][773]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.10.17-00.22.26:366][773]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson"
+[2026.10.17-00.22.26:368][773]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson
+[2026.10.17-00.22.26:369][773]LogPushModel: PushModel HandleCreation is now enabled
+[2026.10.17-00.22.26:370][773]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.10.17-00.22.26:373][773]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2026.10.17-00.22.26:373][773]LogNet: Created socket for bind address: 0.0.0.0:0
+[2026.10.17-00.22.26:373][773]LogNet: IpConnection_4 setting maximum channels to: 32767
+[2026.10.17-00.22.26:375][773]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.10.17-00.22.26:377][773]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 5
+[2026.10.17-00.22.26:379][773]LogNet: Game client on port 17777, rate 100000
+[2026.10.17-00.22.26:416][773]PIE: Client logged in
+[2026.10.17-00.22.26:426][773]PIE: Play in editor total start time 1.138 seconds.
+[2026.10.17-00.22.27:432][773]LogAutomationController: Ignoring very large delta of 2.30 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2026.10.17-00.22.28:066][775]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55676
+[2026.10.17-00.22.28:067][775]LogHandshake: SendConnectChallenge. Timestamp: 2.943614, Cookie: 164149033132094186137005136186083063214242048171234112065159
+[2026.10.17-00.22.28:074][775]LogHandshake: Cached server SessionID: 0
+[2026.10.17-00.22.28:074][775]LogHandshake: SendChallengeResponse. Timestamp: 2.943614, Cookie: 164149033132094186137005136186083063214242048171234112065159
+[2026.10.17-00.22.28:106][776]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55676
+[2026.10.17-00.22.28:107][776]LogHandshake: SendChallengeAck. InCookie: 164149033132094186137005136186083063214242048171234112065159
+[2026.10.17-00.22.28:107][776]LogNet: Server accepting post-challenge connection from: 127.0.0.1:55676
+[2026.10.17-00.22.28:107][776]LogNet: IpConnection_5 setting maximum channels to: 32767
+[2026.10.17-00.22.28:109][776]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.10.17-00.22.28:112][776]LogNet: NotifyAcceptedConnection: Name: Level_1, TimeStamp: 10/16/26 17:22:28, [UNetConnection] RemoteAddr: 127.0.0.1:55676, Name: IpConnection_5, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.10.17-00.22.28:112][776]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:55676, Name: IpConnection_5, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.10.17-00.22.28:118][776]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_4, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_5, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.10.17-00.22.28:149][777]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1: Accepted
+[2026.10.17-00.22.28:150][777]LogNet: Remote platform little endian=1
+[2026.10.17-00.22.28:150][777]LogNet: This platform little endian=1
+[2026.10.17-00.22.28:189][777]LogOnline: OSS: Created online subsystem instance for: :Context_22
+[2026.10.17-00.22.28:226][778]LogNet: Login request: ?Name=ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C userId: NULL:ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C platform: NULL
+[2026.10.17-00.22.28:230][778]LogNet: Welcomed by server (Level: /Game/Variant_Platforming/UEDPIE_0_Level_1, Game: /Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C)
+[2026.10.17-00.22.28:232][778]LogLoad: LoadMap: 127.0.0.1:17777/Game/Variant_Platforming/Level_1?game=/Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C
+[2026.10.17-00.22.28:232][778]LogWorld: BeginTearingDown for /Temp/Untitled_3
+[2026.10.17-00.22.28:238][778]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.22.28:240][778]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.22.28:361][778]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.10.17-00.22.28:401][778]LogUObjectHash: Compacting FUObjectHashTables data took   3.62ms
+[2026.10.17-00.22.28:467][778]LogAudio: Display: Audio Device (ID: 7) registered with world 'Level_1'.
+[2026.10.17-00.22.28:467][778]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.10.17-00.22.28:473][778]LogPlayLevel: PIE: World Init took: (0.005866s)
+[2026.10.17-00.22.28:484][778]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_1_Level_1.Level_1 up for play (max tick rate 60) at 2026.10.16-17.22.28
+[2026.10.17-00.22.28:484][778]LogWorld: Bringing up level for play took: 0.009684
+[2026.10.17-00.22.28:486][778]LogLoad: Took 0.254516 seconds to LoadMap(/Game/Variant_Platforming/Level_1)
+[2026.10.17-00.22.28:487][778]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Variant_Platforming/Level_1
+[2026.10.17-00.22.28:487][778]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2026.10.17-00.22.28:544][779]LogNet: Client netspeed is 100000
+[2026.10.17-00.22.28:544][779]LogNet: Join request: /Game/ThirdPerson/Lvl_ThirdPerson?Name=ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C?SplitscreenCount=1
+[2026.10.17-00.22.28:582][779]LogNet: Join succeeded: ClaysLaptopGcu-DFDBE
+[2026.10.17-00.25.48:995][195]Cmd: exit
+[2026.10.17-00.25.49:013][195]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.10.17-00.25.49:015][195]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_1_Level_1
+[2026.10.17-00.25.49:016][195]LogSlate: Window 'PlatformerGame Preview [NetMode: Client 1]  (64-bit/PC D3D SM6)' being destroyed
+[2026.10.17-00.25.49:235][195]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.25.49:239][195]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.25.49:244][195]LogNet: World NetDriver shutdown IpNetDriver_5 [GameNetDriver]
+[2026.10.17-00.25.49:244][195]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_5 
+[2026.10.17-00.25.49:244][195]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_4, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_5, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C, Channels: 21, Time: 2026.10.17-00.25.49
+[2026.10.17-00.25.49:244][195]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_4, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_5, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C
+[2026.10.17-00.25.49:247][195]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_5 shut down
+[2026.10.17-00.25.49:247][195]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_0_Level_1
+[2026.10.17-00.25.49:256][195]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.10.17-00.25.49:257][195]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.25.49:260][195]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.25.49:264][195]LogNet: World NetDriver shutdown IpNetDriver_4 [GameNetDriver]
+[2026.10.17-00.25.49:264][195]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4 
+[2026.10.17-00.25.49:265][195]LogNet: UNetConnection::SendCloseReason:
+[2026.10.17-00.25.49:265][195]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2026.10.17-00.25.49:265][195]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:55676, Name: IpConnection_5, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C
+[2026.10.17-00.25.49:265][195]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:55676, Name: IpConnection_5, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C, Channels: 21, Time: 2026.10.17-00.25.49
+[2026.10.17-00.25.49:265][195]LogNet: UNetConnection::SendCloseReason:
+[2026.10.17-00.25.49:265][195]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2026.10.17-00.25.49:266][195]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:55676, Name: IpConnection_5, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C
+[2026.10.17-00.25.49:266][195]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:55676 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:55676, Name: IpConnection_5, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-DFDBE6BA40B2E17C04E5DA8A04630C8C
+[2026.10.17-00.25.49:268][195]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_4 shut down
+[2026.10.17-00.25.49:268][195]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.10.17-00.25.49:290][195]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.25.49:356][195]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.10.17-00.25.49:357][195]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 6
+[2026.10.17-00.25.49:358][195]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6, StreamState=4
+[2026.10.17-00.25.49:389][195]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6, StreamState=2
+[2026.10.17-00.25.49:437][195]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 7
+[2026.10.17-00.25.49:438][195]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7, StreamState=4
+[2026.10.17-00.25.49:445][195]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7, StreamState=2
+[2026.10.17-00.25.49:492][195]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2026.10.17-00.25.49:859][196]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2026.10.17-00.25.49:866][196]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2026.10.17-00.26.31:446][365]LogUObjectHash: Compacting FUObjectHashTables data took   3.18ms
+[2026.10.17-00.26.31:450][365]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Variant_Platforming/Level_1' took 0.156
+[2026.10.17-00.26.31:460][365]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/LevelPrototyping/Interactable/JumpPad/Coin] ([2] browsable assets)...
+[2026.10.17-00.26.32:043][365]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/LevelPrototyping/Interactable/JumpPad/Coin.Coin]
+[2026.10.17-00.26.32:045][365]OBJ SavePackage: Finished generating thumbnails for package [/Game/LevelPrototyping/Interactable/JumpPad/Coin]
+[2026.10.17-00.26.32:187][365]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/LevelPrototyping/Interactable/JumpPad/Coin_Auto1
+[2026.10.17-00.26.32:189][365]LogSavePackage: Moving '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/Coin_Auto147AA84BD440868841D9EBBBE2FA7F512.tmp' to '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/Autosaves/Game/LevelPrototyping/Interactable/JumpPad/Coin_Auto1.uasset'
+[2026.10.17-00.26.32:207][365]LogFileHelpers: Auto-saving content packages took 0.757
+[2026.10.17-00.26.32:239][365]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 16365
+[2026.10.17-00.26.32:239][365]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2026.10.17-00.26.32:247][365]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.36:525][802]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2494.883789
+[2026.10.17-00.27.37:478][806]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.10.17-00.27.37:479][806]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2495.550537, Update Interval: 336.871246
+[2026.10.17-00.27.46:439][853]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2026.10.17-00.27.49:032][853]LogSlate: Window 'Save Content' being destroyed
+[2026.10.17-00.27.49:093][853]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.10.17-00.27.49:194][853]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/LevelPrototyping/Interactable/JumpPad/Coin] ([2] browsable assets)...
+[2026.10.17-00.27.49:194][853]OBJ SavePackage: Finished generating thumbnails for package [/Game/LevelPrototyping/Interactable/JumpPad/Coin]
+[2026.10.17-00.27.49:220][853]LogSavePackage: Moving output files for package: /Game/LevelPrototyping/Interactable/JumpPad/Coin
+[2026.10.17-00.27.49:222][853]LogSavePackage: Moving '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/Coin9A8DFA0749AB1B7D33674C89F72C51D2.tmp' to '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Content/LevelPrototyping/Interactable/JumpPad/Coin.uasset'
+[2026.10.17-00.27.49:249][853]LogFileHelpers: InternalPromptForCheckoutAndSave took 156.575 ms (total: 2.79 sec)
+[2026.10.17-00.27.49:369][853]LogStall: Shutdown...
+[2026.10.17-00.27.49:369][853]LogStall: Shutdown complete.
+[2026.10.17-00.27.49:594][853]LogSlate: Window 'PlatformerGame - Unreal Editor' being destroyed
+[2026.10.17-00.27.51:402][853]LogContentValidation: Display: Starting to validate 1 assets
+[2026.10.17-00.27.51:402][853]LogContentValidation: Enabled validators:
+[2026.10.17-00.27.51:402][853]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.10.17-00.27.51:402][853]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.10.17-00.27.51:402][853]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.10.17-00.27.51:402][853]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.10.17-00.27.51:403][853]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.10.17-00.27.51:403][853]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.10.17-00.27.51:405][853]AssetCheck: /Game/LevelPrototyping/Interactable/JumpPad/Coin Validating asset
+[2026.10.17-00.27.51:410][853]LogAutomationController: Ignoring very large delta of 5.11 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2026.10.17-00.27.51:419][854]Cmd: QUIT_EDITOR
+[2026.10.17-00.27.51:420][854]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2026.10.17-00.27.51:449][854]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2026.10.17-00.27.51:456][854]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2026.10.17-00.27.51:457][854]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2026.10.17-00.27.51:479][854]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:481][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:587][854]LogStylusInput: Shutting down StylusInput subsystem.
+[2026.10.17-00.27.51:593][854]LogTedsSettings: UTedsSettingsEditorSubsystem::Deinitialize
+[2026.10.17-00.27.51:608][854]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2026.10.17-00.27.51:670][854]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:672][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:683][854]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:683][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:690][854]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:692][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:699][854]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:699][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:706][854]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:706][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:716][854]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:716][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:742][854]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:744][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:755][854]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2026.10.17-00.27.51:756][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.10.17-00.27.51:783][854]LogRuntimeTelemetry: Recording EnginePreExit events
+[2026.10.17-00.27.51:793][854]LogStudioTelemetry: Ended StudioTelemetry Session
+[2026.10.17-00.27.51:826][854]LogAnalytics: Display: [UEEditor.Rocket.Release] AnalyticsET::EndSession
+[2026.10.17-00.27.51:892][854]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2026.10.17-00.27.51:892][854]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2026.10.17-00.27.51:894][854]LogAudio: Display: Audio Device unregistered from world 'Level_1'.
+[2026.10.17-00.27.51:894][854]LogAudio: Display: Shutting down audio device while 1 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2026.10.17-00.27.51:894][854]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1, StreamState=4
+[2026.10.17-00.27.51:916][854]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1, StreamState=2
+[2026.10.17-00.27.51:963][854]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID -1
+[2026.10.17-00.27.51:964][854]LogAudio: Display: Audio Device Manager Shutdown
+[2026.10.17-00.27.51:970][854]LogWindowsTextInputMethodSystem: Activated input method: English (United States) - (Keyboard).
+[2026.10.17-00.27.51:982][854]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2026.10.17-00.27.51:985][854]LogExit: Preparing to exit.
+[2026.10.17-00.27.52:254][854]LogUObjectHash: Compacting FUObjectHashTables data took   6.99ms
+[2026.10.17-00.27.52:284][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.add_controls_for_selected_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:286][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.add_controls_for_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:290][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_null_above_selected_PY.add_null_above_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_all' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_x' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_y' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_z' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_scale' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.search_replace_name_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:291][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.search_replace_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_prefix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_prefix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_suffix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_suffix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.do_rename_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.do_rename_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/set_bone_reference_pose_PY.set_bone_reference_pose' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/ControlRigWorkflows/workflow_fbik_import_ik_rig_PY.import_ik_rig_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.52:292][854]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.ControlOutputFormat' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.10.17-00.27.53:678][854]LogEditorDataStorage: Deinitializing
+[2026.10.17-00.27.54:502][854]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2026.10.17-00.27.54:734][854]LogExit: Editor shut down
+[2026.10.17-00.27.54:791][854]LogExit: Transaction tracking system shut down
+[2026.10.17-00.27.56:359][854]LogExit: Object subsystem successfully closed.
+[2026.10.17-00.27.56:408][854]LogShaderCompilers: Display: Shaders left to compile 0
+[2026.10.17-00.27.57:228][854]LogMemoryProfiler: Shutdown
+[2026.10.17-00.27.57:228][854]LogNetworkingProfiler: Shutdown
+[2026.10.17-00.27.57:228][854]LoadingProfiler: Shutdown
+[2026.10.17-00.27.57:228][854]LogTimingProfiler: Shutdown
+[2026.10.17-00.27.57:231][854]LogChaosVDEditor: [FChaosVDExtensionsManager::UnRegisterExtension] UnRegistering CVD Extension [FChaosVDGenericDebugDrawExtension] ...
+[2026.10.17-00.27.57:232][854]LogChaosVDEditor: [FChaosVDExtensionsManager::UnRegisterExtension] UnRegistering CVD Extension [FChaosVDAccelerationStructuresExtension] ...
+[2026.10.17-00.27.58:758][854]LogChaosDD: Chaos Debug Draw Shutdown
+[2026.10.17-00.27.58:787][854]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2026.10.17-00.27.58:787][854]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B039521D6-4949-3103-4844-009D60AA1689%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.6.1-44394996%2B%2B%2BUE5%2BRelease-5.6&UserID=10b923b74b842feac9647aa915e9684f%7C92754530bd2140b886a0031212b0f824%7C72aec0ac-86d7-4b35-8997-eaf1c943295b&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[2] status=Processing
+[2026.10.17-00.27.59:406][854]LogEOSShared: FEOSSDKManager::Shutdown EOS_Shutdown Result=[EOS_Success]
+[2026.10.17-00.27.59:430][854]LogNFORDenoise: NFORDenoise function shutting down
+[2026.10.17-00.27.59:434][854]RenderDocPlugin: plugin has been unloaded.
+[2026.10.17-00.27.59:479][854]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetActorFactory id: 0
+[2026.10.17-00.27.59:479][854]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetSubObjectFactory id: 1
+[2026.10.17-00.27.59:480][854]LogPakFile: Destroying PakPlatformFile
+[2026.10.17-00.28.01:097][854]LogD3D12RHI: ~FD3D12DynamicRHI
+[2026.10.17-00.28.01:271][854]LogExit: Exiting.
+[2026.10.17-00.28.01:362][854]Log file closed, 10/16/26 17:28:01
