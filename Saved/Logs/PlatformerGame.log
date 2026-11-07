@@ -1921,3 +1921,846 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2026.11.07-20.32.46:952][436]AssetCheck: /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter Validating asset
 [2026.11.07-20.32.46:953][436]AssetCheck: /Engine/MapTemplates/Materials/BasicAsset03 Validating asset
 [2026.11.07-20.32.46:992][436]LogSourceControl: Display: Uncontrolled Changelist persistency file saved ../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/SourceControl/UncontrolledChangelists.json
+[2026.11.07-20.33.35:005][591]LogShaderCompilers: Display: ================================================
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Total job queries 585, among them cache hits 72 (12.31%), DDC hits 377 (64.44%), Duplicates 72 (12.31%)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Tracking 441 distinct input hashes that result in 317 distinct outputs (71.88%)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: RAM used: 3.79 MiB of 819.20 MiB budget. Usage: 0.46%
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Shaders Compiled: 64
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Jobs assigned 64, completed 64 (100%)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Average time worker was idle: 101.83 s
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Time job spent in pending queue: average 0.05 s, longest 0.12 s
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Job execution time: average 1.24 s, max 3.19 s
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Job life time (pending + execution): average 1.29 s, max 3.21
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Shader code size: total 580.43 KiB, numShaders 74, average 7.843 KiB, min 1.727 KiB, max 18.102 KiB
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 32.18 s
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.06%
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Jobs were issued in 64 batches (only local compilation was used), average 1.00 jobs/batch
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Average processing rate: 1.99 jobs/sec
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Total thread time: 59.853 s
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Total thread preprocess time: 19.457 s
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Percentage time preprocessing: 32.51%
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Effective parallelization: 1.86 (times faster than compiling all shaders on one thread). Compare with number of workers: 8 - 0.232464
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                                 FDepthOnlyPS (compiled    3 times, average 1.39 sec, max 1.82 sec, min 1.11 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                             FDebugViewModePS (compiled    1 times, average 1.29 sec, max 1.29 sec, min 1.29 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                TMaterialCHSFNoLightMapPolicy (compiled    1 times, average 1.26 sec, max 1.26 sec, min 1.26 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                      FPathTracingMaterialCHS (compiled    1 times, average 1.22 sec, max 1.22 sec, min 1.22 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                                  FVelocityPS (compiled    7 times, average 1.19 sec, max 1.92 sec, min 0.55 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 36.90% of total time (compiled   25 times, average 0.88 sec, max 1.55 sec, min 0.44 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 15.60% of total time (compiled   15 times, average 0.62 sec, max 1.40 sec, min 0.41 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                                  FVelocityPS - 13.88% of total time (compiled    7 times, average 1.19 sec, max 1.92 sec, min 0.55 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                                  FVelocityVS - 7.67% of total time (compiled    7 times, average 0.66 sec, max 0.78 sec, min 0.46 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display:                                                 FDepthOnlyPS - 6.95% of total time (compiled    3 times, average 1.39 sec, max 1.82 sec, min 1.11 sec)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: === Material stats ===
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Materials Cooked:        0
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Materials Translated:    147
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Material Total Translate Time: 0.32 s
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Material Translation Only: 0.15 s (48%)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Material DDC Serialization Only: 0.01 s (2%)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: Material Cache Hits: 28 (19%)
+[2026.11.07-20.33.35:006][591]LogShaderCompilers: Display: ================================================
+[2026.11.07-20.37.35:860][484]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3046.970703
+[2026.11.07-20.37.36:121][487]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.11.07-20.37.36:122][487]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3047.166748, Update Interval: 339.185760
+[2026.11.07-20.42.57:121][385]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/WB_PlayerHud.WB_PlayerHud
+[2026.11.07-20.42.57:176][385]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_8
+[2026.11.07-20.42.57:358][385]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_9
+[2026.11.07-20.42.57:401][385]LogSlate: Warning: The command 'UMGEditor.OpenAnimDrawer' has the same default chord as 'EditorViewport.Next' [Ctrl+Shift+Space Bar]
+[2026.11.07-20.43.00:538][385]LogSlate: Took 0.001921 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2026.11.07-20.44.10:379][405]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3441.486084
+[2026.11.07-20.44.10:711][410]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.11.07-20.44.10:711][410]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3441.751709, Update Interval: 326.717743
+[2026.11.07-20.47.49:222][622]LogUObjectHash: Compacting FUObjectHashTables data took  28.52ms
+[2026.11.07-20.48.07:021][842]LogVSAccessor: Visual Studio is open but could not be queried - it may still be initializing or blocked by a modal operation
+[2026.11.07-20.48.23:053][ 39]LogSlate: Window 'WB_PlayerHud' being destroyed
+[2026.11.07-20.48.23:129][ 39]LogSlate: Window 'WB_PlayerHud' being destroyed
+[2026.11.07-20.48.23:236][ 39]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-20.48.23:247][ 39]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.48.23:309][ 39]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-20.48.23:310][ 39]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.48.23:502][ 39]LogUObjectHash: Compacting FUObjectHashTables data took   6.66ms
+[2026.11.07-20.48.35:024][211]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 30211
+[2026.11.07-20.48.35:024][211]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2026.11.07-20.48.35:026][211]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.48.35:047][212]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_11
+[2026.11.07-20.48.35:705][213]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_12
+[2026.11.07-20.48.45:843][352]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Variant_Platforming/Blueprints/BP_PlatformingPlayerController.BP_PlatformingPlayerController
+[2026.11.07-20.48.45:845][352]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_13
+[2026.11.07-20.49.04:027][593]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode
+[2026.11.07-20.49.04:027][593]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_14
+[2026.11.07-20.49.14:578][721]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter.BP_PlatformingCharacter
+[2026.11.07-20.49.14:579][721]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_15
+[2026.11.07-20.49.38:113][ 56]LogSlate: Window 'Color Picker' being destroyed
+[2026.11.07-20.50.09:528][757]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3800.631348
+[2026.11.07-20.50.09:803][761]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.11.07-20.50.09:803][761]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3800.838379, Update Interval: 335.851318
+[2026.11.07-20.50.26:163][ 24]LogUObjectHash: Compacting FUObjectHashTables data took   2.02ms
+[2026.11.07-20.50.27:337][ 31]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2026.11.07-20.51.18:235][525]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2026.11.07-20.51.18:245][525]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Variant_Platforming/Level_1' took 0.083
+[2026.11.07-20.51.18:252][525]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter] ([2] browsable assets)...
+[2026.11.07-20.51.18:785][525]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter.BP_PlatformingCharacter]
+[2026.11.07-20.51.18:785][525]OBJ SavePackage: Finished generating thumbnails for package [/Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter]
+[2026.11.07-20.51.18:899][525]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter_Auto3
+[2026.11.07-20.51.18:900][525]LogSavePackage: Moving '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/BP_PlatformingCharacter_Auto33C1AB0904CD9F21DA81DC4B8390E40A0.tmp' to '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/Autosaves/Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter_Auto3.uasset'
+[2026.11.07-20.51.18:909][525]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/UI/WB_PlayerHud] ([2] browsable assets)...
+[2026.11.07-20.51.18:950][525]OBJ SavePackage:     Rendered thumbnail for [WidgetBlueprint /Game/UI/WB_PlayerHud.WB_PlayerHud]
+[2026.11.07-20.51.18:951][525]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/WB_PlayerHud]
+[2026.11.07-20.51.18:972][525]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/UI/WB_PlayerHud_Auto3
+[2026.11.07-20.51.18:973][525]LogSavePackage: Moving '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/WB_PlayerHud_Auto3D5BEE7124E97C743ECFEF7B33ACFF11C.tmp' to '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/Autosaves/Game/UI/WB_PlayerHud_Auto3.uasset'
+[2026.11.07-20.51.18:973][525]LogFileHelpers: Auto-saving content packages took 0.728
+[2026.11.07-20.52.43:348][956]LogStreaming: Display: FlushAsyncLoading(577): 1 QueuedPackages, 0 AsyncPackages
+[2026.11.07-20.53.21:003][664]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2026.11.07-20.53.22:126][671]LogUObjectHash: Compacting FUObjectHashTables data took   9.66ms
+[2026.11.07-20.53.51:009][261]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2026.11.07-20.53.55:150][313]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.11.07-20.53.55:168][313]LogUMGEditor: Disabling Slate Post Buffers for multi-window PIE session, currently not supported.
+[2026.11.07-20.53.55:179][313]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.11.07-20.53.55:185][313]LogPlayLevel: Creating play world package: /Game/Variant_Platforming/UEDPIE_0_Level_1
+[2026.11.07-20.53.55:218][313]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033598s)
+[2026.11.07-20.53.55:218][313]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Variant_Platforming/Level_1.Level_1 to /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1 (0.034107s)
+[2026.11.07-20.53.55:261][313]LogUObjectHash: Compacting FUObjectHashTables data took   2.35ms
+[2026.11.07-20.53.55:275][313]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.11.07-20.53.55:321][313]LogPlayLevel: PIE: World Init took: (0.047531s)
+[2026.11.07-20.53.55:323][313]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2026.11.07-20.53.55:325][313]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.07-20.53.55:325][313]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.07-20.53.55:325][313]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.07-20.53.55:325][313]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.07-20.53.55:325][313]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.11.07-20.53.55:325][313]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.07-20.53.55:325][313]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.11.07-20.53.55:325][313]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.07-20.53.55:328][313]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.07-20.53.55:328][313]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.07-20.53.55:328][313]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.07-20.53.55:339][313]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.11.07-20.53.55:390][313]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+[2026.11.07-20.53.55:393][313]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.11.07-20.53.55:393][313]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.11.07-20.53.55:394][313]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.11.07-20.53.55:397][313]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2026.11.07-20.53.55:397][313]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2026.11.07-20.53.55:400][313]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2026.11.07-20.53.55:400][313]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2026.11.07-20.53.55:401][313]LogInit: FAudioDevice initialized with ID 8.
+[2026.11.07-20.53.55:401][313]LogAudio: Display: Audio Device (ID: 8) registered with world 'Level_1'.
+[2026.11.07-20.53.55:403][313]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2026.11.07-20.53.55:429][313]LogLoad: Game class is 'BP_PlatformingGameMode_C'
+[2026.11.07-20.53.55:436][313]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1 up for play (max tick rate 60) at 2026.11.07-13.53.55
+[2026.11.07-20.53.55:447][313]LogOnline: OSS: Created online subsystem instance for: :Context_22
+[2026.11.07-20.53.55:449][313]LogWorld: Bringing up level for play took: 0.019034
+[2026.11.07-20.53.55:475][313]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2026.11.07-20.53.55:476][313]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2026.11.07-20.53.55:477][313]LogPushModel: PushModel HandleCreation is now enabled
+[2026.11.07-20.53.55:477][313]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.07-20.53.55:478][313]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2026.11.07-20.53.55:480][313]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2026.11.07-20.53.55:480][313]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-20.53.55:480][313]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6 IpNetDriver listening on port 17777
+[2026.11.07-20.53.55:494][313]PIE: Server logged in
+[2026.11.07-20.53.55:497][313]PIE: Play in editor total start time 0.33 seconds.
+[2026.11.07-20.53.55:498][313]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.11.07-20.53.55:502][313]LogPlayLevel: PIE: World Init took: (0.003096s)
+[2026.11.07-20.53.55:503][313]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2026.11.07-20.53.55:503][313]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.07-20.53.55:503][313]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.07-20.53.55:503][313]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.07-20.53.55:503][313]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.07-20.53.55:503][313]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.11.07-20.53.55:503][313]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.07-20.53.55:503][313]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.11.07-20.53.55:503][313]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.07-20.53.55:503][313]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.07-20.53.55:503][313]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.07-20.53.55:503][313]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.07-20.53.55:507][313]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.11.07-20.53.55:520][313]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+[2026.11.07-20.53.55:521][313]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.11.07-20.53.55:521][313]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.11.07-20.53.55:521][313]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.11.07-20.53.55:522][313]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2026.11.07-20.53.55:524][313]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2026.11.07-20.53.55:529][313]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2026.11.07-20.53.55:529][313]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2026.11.07-20.53.55:529][313]LogInit: FAudioDevice initialized with ID 9.
+[2026.11.07-20.53.55:529][313]LogAudio: Display: Audio Device (ID: 9) registered with world 'Untitled'.
+[2026.11.07-20.53.55:529][313]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2026.11.07-20.53.55:598][313]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-20.53.55:600][313]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson"
+[2026.11.07-20.53.55:600][313]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson
+[2026.11.07-20.53.55:602][313]LogPushModel: PushModel HandleCreation is now enabled
+[2026.11.07-20.53.55:602][313]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.07-20.53.55:602][313]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2026.11.07-20.53.55:602][313]LogNet: Created socket for bind address: 0.0.0.0:0
+[2026.11.07-20.53.55:602][313]LogNet: IpConnection_6 setting maximum channels to: 32767
+[2026.11.07-20.53.55:603][313]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-20.53.55:603][313]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 1
+[2026.11.07-20.53.55:604][313]LogNet: Game client on port 17777, rate 100000
+[2026.11.07-20.53.55:623][313]PIE: Client logged in
+[2026.11.07-20.53.55:635][313]PIE: Play in editor total start time 0.468 seconds.
+[2026.11.07-20.53.56:772][317]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:56046
+[2026.11.07-20.53.56:772][317]LogHandshake: SendConnectChallenge. Timestamp: 1.696645, Cookie: 017067086002242158116180099026003173085161201079239080015035
+[2026.11.07-20.53.56:777][317]LogHandshake: Cached server SessionID: 0
+[2026.11.07-20.53.56:777][317]LogHandshake: SendChallengeResponse. Timestamp: 1.696645, Cookie: 017067086002242158116180099026003173085161201079239080015035
+[2026.11.07-20.53.56:919][318]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:56046
+[2026.11.07-20.53.56:919][318]LogHandshake: SendChallengeAck. InCookie: 017067086002242158116180099026003173085161201079239080015035
+[2026.11.07-20.53.56:919][318]LogNet: Server accepting post-challenge connection from: 127.0.0.1:56046
+[2026.11.07-20.53.56:920][318]LogNet: IpConnection_7 setting maximum channels to: 32767
+[2026.11.07-20.53.56:920][318]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-20.53.56:924][318]LogNet: NotifyAcceptedConnection: Name: Level_1, TimeStamp: 11/07/26 13:53:56, [UNetConnection] RemoteAddr: 127.0.0.1:56046, Name: IpConnection_7, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.53.56:924][318]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:56046, Name: IpConnection_7, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.53.56:927][318]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_6, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_7, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.53.57:021][319]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1: Accepted
+[2026.11.07-20.53.57:021][319]LogNet: Remote platform little endian=1
+[2026.11.07-20.53.57:021][319]LogNet: This platform little endian=1
+[2026.11.07-20.53.57:039][319]LogOnline: OSS: Created online subsystem instance for: :Context_23
+[2026.11.07-20.53.57:135][320]LogNet: Login request: ?Name=ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59 userId: NULL:ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59 platform: NULL
+[2026.11.07-20.53.57:141][320]LogNet: Welcomed by server (Level: /Game/Variant_Platforming/UEDPIE_0_Level_1, Game: /Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C)
+[2026.11.07-20.53.57:141][320]LogLoad: LoadMap: 127.0.0.1:17777/Game/Variant_Platforming/Level_1?game=/Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C
+[2026.11.07-20.53.57:142][320]LogWorld: BeginTearingDown for /Temp/Untitled_4
+[2026.11.07-20.53.57:150][320]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-20.53.57:154][320]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.53.57:207][320]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.11.07-20.53.57:237][320]LogUObjectHash: Compacting FUObjectHashTables data took   2.75ms
+[2026.11.07-20.53.57:327][320]LogAudio: Display: Audio Device (ID: 9) registered with world 'Level_1'.
+[2026.11.07-20.53.57:327][320]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.11.07-20.53.57:334][320]LogPlayLevel: PIE: World Init took: (0.006351s)
+[2026.11.07-20.53.57:341][320]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_1_Level_1.Level_1 up for play (max tick rate 60) at 2026.11.07-13.53.57
+[2026.11.07-20.53.57:342][320]LogWorld: Bringing up level for play took: 0.006443
+[2026.11.07-20.53.57:343][320]LogLoad: Took 0.201339 seconds to LoadMap(/Game/Variant_Platforming/Level_1)
+[2026.11.07-20.53.57:343][320]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Variant_Platforming/Level_1
+[2026.11.07-20.53.57:343][320]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2026.11.07-20.53.57:385][321]LogNet: Client netspeed is 100000
+[2026.11.07-20.53.57:385][321]LogNet: Join request: /Game/ThirdPerson/Lvl_ThirdPerson?Name=ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59?SplitscreenCount=1
+[2026.11.07-20.53.57:422][321]LogNet: Join succeeded: ClaysLaptopGcu-E67C2
+[2026.11.07-20.53.58:151][322]LogNetPackageMap: Warning: FNetGUIDCache::SupportsObject: WB_PlayerHud_C /Engine/Transient.UnrealEdEngine_0:GameInstance_6.WB_PlayerHud_C_1 NOT Supported.
+[2026.11.07-20.55.21:504][  6]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-20.55.21:505][  6]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_1_Level_1
+[2026.11.07-20.55.21:511][  6]LogSlate: Window 'PlatformerGame Preview [NetMode: Client 1]  (64-bit/PC D3D SM6)' being destroyed
+[2026.11.07-20.55.21:858][  6]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-20.55.21:867][  6]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.55.21:884][  6]LogNet: World NetDriver shutdown IpNetDriver_7 [GameNetDriver]
+[2026.11.07-20.55.21:884][  6]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_7 
+[2026.11.07-20.55.21:884][  6]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_6, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_7, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59, Channels: 23, Time: 2026.11.07-20.55.21
+[2026.11.07-20.55.21:884][  6]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_6, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_7, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59
+[2026.11.07-20.55.21:888][  6]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_7 shut down
+[2026.11.07-20.55.21:888][  6]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_0_Level_1
+[2026.11.07-20.55.21:895][  6]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-20.55.21:897][  6]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-20.55.21:900][  6]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.55.21:906][  6]LogNet: World NetDriver shutdown IpNetDriver_6 [GameNetDriver]
+[2026.11.07-20.55.21:906][  6]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6 
+[2026.11.07-20.55.21:911][  6]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-20.55.21:911][  6]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2026.11.07-20.55.21:911][  6]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:56046, Name: IpConnection_7, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59
+[2026.11.07-20.55.21:911][  6]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:56046, Name: IpConnection_7, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59, Channels: 23, Time: 2026.11.07-20.55.21
+[2026.11.07-20.55.21:911][  6]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-20.55.21:911][  6]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2026.11.07-20.55.21:911][  6]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:56046, Name: IpConnection_7, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59
+[2026.11.07-20.55.21:911][  6]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:56046 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:56046, Name: IpConnection_7, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-E67C238447FC14E1CF75FCAE3B404C59
+[2026.11.07-20.55.21:913][  6]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_6 shut down
+[2026.11.07-20.55.21:914][  6]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.11.07-20.55.21:936][  6]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.55.21:980][  6]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.11.07-20.55.21:992][  6]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2026.11.07-20.55.21:997][  6]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8, StreamState=4
+[2026.11.07-20.55.22:040][  6]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8, StreamState=2
+[2026.11.07-20.55.22:092][  6]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-20.55.22:093][  6]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2026.11.07-20.55.22:094][  6]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9, StreamState=4
+[2026.11.07-20.55.22:101][  6]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9, StreamState=2
+[2026.11.07-20.55.22:173][  6]LogUObjectHash: Compacting FUObjectHashTables data took   4.34ms
+[2026.11.07-20.55.22:540][  7]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2026.11.07-20.55.22:546][  7]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2026.11.07-20.56.25:094][719]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4176.199707
+[2026.11.07-20.56.26:092][722]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.11.07-20.56.26:092][722]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4176.868164, Update Interval: 323.333832
+[2026.11.07-20.59.27:495][267]LogDerivedDataCache: C:/Users/clayk/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.003 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2026.11.07-20.59.45:577][887]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.11.07-20.59.45:592][887]LogUMGEditor: Disabling Slate Post Buffers for multi-window PIE session, currently not supported.
+[2026.11.07-20.59.45:600][887]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.11.07-20.59.45:609][887]LogPlayLevel: Creating play world package: /Game/Variant_Platforming/UEDPIE_0_Level_1
+[2026.11.07-20.59.45:670][887]LogPlayLevel: PIE: StaticDuplicateObject took: (0.060001s)
+[2026.11.07-20.59.45:670][887]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Variant_Platforming/Level_1.Level_1 to /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1 (0.060353s)
+[2026.11.07-20.59.45:734][887]LogUObjectHash: Compacting FUObjectHashTables data took   4.29ms
+[2026.11.07-20.59.45:744][887]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.11.07-20.59.45:785][887]LogPlayLevel: PIE: World Init took: (0.041358s)
+[2026.11.07-20.59.45:789][887]LogLoad: Game class is 'BP_PlatformingGameMode_C'
+[2026.11.07-20.59.45:801][887]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1 up for play (max tick rate 60) at 2026.11.07-13.59.45
+[2026.11.07-20.59.45:818][887]LogOnline: OSS: Created online subsystem instance for: :Context_24
+[2026.11.07-20.59.45:821][887]LogWorld: Bringing up level for play took: 0.029283
+[2026.11.07-20.59.45:827][887]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2026.11.07-20.59.45:827][887]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2026.11.07-20.59.45:830][887]LogPushModel: PushModel HandleCreation is now enabled
+[2026.11.07-20.59.45:830][887]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.07-20.59.45:834][887]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2026.11.07-20.59.45:834][887]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2026.11.07-20.59.45:834][887]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-20.59.45:834][887]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8 IpNetDriver listening on port 17777
+[2026.11.07-20.59.45:840][887]PIE: Server logged in
+[2026.11.07-20.59.45:840][887]PIE: Play in editor total start time 0.249 seconds.
+[2026.11.07-20.59.45:843][887]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.11.07-20.59.45:846][887]LogPlayLevel: PIE: World Init took: (0.003357s)
+[2026.11.07-20.59.45:848][887]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2026.11.07-20.59.45:850][887]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.07-20.59.45:850][887]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.07-20.59.45:850][887]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.07-20.59.45:850][887]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.07-20.59.45:850][887]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.11.07-20.59.45:850][887]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.07-20.59.45:850][887]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.11.07-20.59.45:850][887]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.07-20.59.45:852][887]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.07-20.59.45:852][887]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.07-20.59.45:852][887]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.07-20.59.45:860][887]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.11.07-20.59.45:883][887]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+[2026.11.07-20.59.45:886][887]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.11.07-20.59.45:886][887]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.11.07-20.59.45:886][887]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.11.07-20.59.45:887][887]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2026.11.07-20.59.45:887][887]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2026.11.07-20.59.45:891][887]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2026.11.07-20.59.45:891][887]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2026.11.07-20.59.45:891][887]LogInit: FAudioDevice initialized with ID 10.
+[2026.11.07-20.59.45:891][887]LogAudio: Display: Audio Device (ID: 10) registered with world 'Untitled'.
+[2026.11.07-20.59.45:894][887]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 10
+[2026.11.07-20.59.45:911][887]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson"
+[2026.11.07-20.59.45:911][887]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson
+[2026.11.07-20.59.45:911][887]LogPushModel: PushModel HandleCreation is now enabled
+[2026.11.07-20.59.45:911][887]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.07-20.59.45:912][887]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2026.11.07-20.59.45:912][887]LogNet: Created socket for bind address: 0.0.0.0:0
+[2026.11.07-20.59.45:912][887]LogNet: IpConnection_8 setting maximum channels to: 32767
+[2026.11.07-20.59.45:914][887]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-20.59.45:916][887]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 2
+[2026.11.07-20.59.45:916][887]LogNet: Game client on port 17777, rate 100000
+[2026.11.07-20.59.45:918][887]PIE: Client logged in
+[2026.11.07-20.59.45:921][887]PIE: Play in editor total start time 0.329 seconds.
+[2026.11.07-20.59.45:921][887]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.11.07-20.59.45:931][887]LogPlayLevel: PIE: World Init took: (0.010254s)
+[2026.11.07-20.59.45:932][887]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2026.11.07-20.59.45:932][887]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.07-20.59.45:932][887]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.07-20.59.45:932][887]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.07-20.59.45:932][887]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.07-20.59.45:932][887]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.11.07-20.59.45:932][887]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.07-20.59.45:932][887]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.11.07-20.59.45:932][887]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.07-20.59.45:932][887]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.07-20.59.45:932][887]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.07-20.59.45:932][887]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.07-20.59.45:937][887]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.11.07-20.59.45:950][887]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+[2026.11.07-20.59.45:952][887]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.11.07-20.59.45:952][887]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.11.07-20.59.45:952][887]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.11.07-20.59.45:955][887]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=11
+[2026.11.07-20.59.45:955][887]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=11
+[2026.11.07-20.59.45:959][887]LogInit: FAudioDevice initialized with ID 11.
+[2026.11.07-20.59.45:959][887]LogAudio: Display: Audio Device (ID: 11) registered with world 'Untitled'.
+[2026.11.07-20.59.45:959][887]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 11
+[2026.11.07-20.59.45:959][887]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=11
+[2026.11.07-20.59.45:959][887]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=11
+[2026.11.07-20.59.46:035][887]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-20.59.46:036][887]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson"
+[2026.11.07-20.59.46:036][887]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson
+[2026.11.07-20.59.46:037][887]LogPushModel: PushModel HandleCreation is now enabled
+[2026.11.07-20.59.46:037][887]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.07-20.59.46:039][887]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2026.11.07-20.59.46:039][887]LogNet: Created socket for bind address: 0.0.0.0:0
+[2026.11.07-20.59.46:039][887]LogNet: IpConnection_9 setting maximum channels to: 32767
+[2026.11.07-20.59.46:040][887]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-20.59.46:040][887]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 3
+[2026.11.07-20.59.46:040][887]LogNet: Game client on port 17777, rate 100000
+[2026.11.07-20.59.46:062][887]PIE: Client logged in
+[2026.11.07-20.59.46:073][887]PIE: Play in editor total start time 0.482 seconds.
+[2026.11.07-20.59.46:947][936]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59234
+[2026.11.07-20.59.46:947][936]LogHandshake: SendConnectChallenge. Timestamp: 1.455331, Cookie: 220070078102134121184138134107198252080124087193201243139100
+[2026.11.07-20.59.46:947][936]LogHandshake: Cached server SessionID: 0
+[2026.11.07-20.59.46:947][936]LogHandshake: SendChallengeResponse. Timestamp: 1.455331, Cookie: 220070078102134121184138134107198252080124087193201243139100
+[2026.11.07-20.59.46:963][937]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59234
+[2026.11.07-20.59.46:963][937]LogHandshake: SendChallengeAck. InCookie: 220070078102134121184138134107198252080124087193201243139100
+[2026.11.07-20.59.46:963][937]LogNet: Server accepting post-challenge connection from: 127.0.0.1:59234
+[2026.11.07-20.59.46:964][937]LogNet: IpConnection_10 setting maximum channels to: 32767
+[2026.11.07-20.59.46:965][937]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-20.59.46:968][937]LogNet: NotifyAcceptedConnection: Name: Level_1, TimeStamp: 11/07/26 13:59:46, [UNetConnection] RemoteAddr: 127.0.0.1:59234, Name: IpConnection_10, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.59.46:968][937]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:59234, Name: IpConnection_10, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.59.46:969][937]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_8, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_9, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.59.46:988][938]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1: Accepted
+[2026.11.07-20.59.46:988][938]LogNet: Remote platform little endian=1
+[2026.11.07-20.59.46:988][938]LogNet: This platform little endian=1
+[2026.11.07-20.59.46:994][938]LogOnline: OSS: Created online subsystem instance for: :Context_25
+[2026.11.07-20.59.47:009][939]LogNet: Login request: ?Name=ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976 userId: NULL:ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976 platform: NULL
+[2026.11.07-20.59.47:010][939]LogNet: Welcomed by server (Level: /Game/Variant_Platforming/UEDPIE_0_Level_1, Game: /Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C)
+[2026.11.07-20.59.47:010][939]LogLoad: LoadMap: 127.0.0.1:17777/Game/Variant_Platforming/Level_1?game=/Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C
+[2026.11.07-20.59.47:010][939]LogWorld: BeginTearingDown for /Temp/Untitled_5
+[2026.11.07-20.59.47:011][939]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-20.59.47:011][939]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.59.47:047][939]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.11.07-20.59.47:050][939]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2026.11.07-20.59.47:061][939]LogAudio: Display: Audio Device (ID: 10) registered with world 'Level_1'.
+[2026.11.07-20.59.47:061][939]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.11.07-20.59.47:064][939]LogPlayLevel: PIE: World Init took: (0.002660s)
+[2026.11.07-20.59.47:071][939]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_1_Level_1.Level_1 up for play (max tick rate 60) at 2026.11.07-13.59.47
+[2026.11.07-20.59.47:071][939]LogWorld: Bringing up level for play took: 0.005216
+[2026.11.07-20.59.47:073][939]LogLoad: Took 0.061597 seconds to LoadMap(/Game/Variant_Platforming/Level_1)
+[2026.11.07-20.59.47:073][939]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Variant_Platforming/Level_1
+[2026.11.07-20.59.47:073][939]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2026.11.07-20.59.47:094][940]LogNet: Client netspeed is 100000
+[2026.11.07-20.59.47:094][940]LogNet: Join request: /Game/ThirdPerson/Lvl_ThirdPerson?Name=ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976?SplitscreenCount=1
+[2026.11.07-20.59.47:137][940]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BP_PlatformingCharacter_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0
+	Function /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter.BP_PlatformingCharacter_C:ExecuteUbergraph_BP_PlatformingCharacter:007B
+[2026.11.07-20.59.47:239][940]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Add to Viewport Graph:  EventGraph Function:  Execute Ubergraph BP Platforming Character Blueprint:  BP_PlatformingCharacter
+[2026.11.07-20.59.47:242][940]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:00ED
+[2026.11.07-20.59.47:250][940]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-20.59.47:250][940]LogScript: Warning: Accessed None
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:0102
+[2026.11.07-20.59.47:250][940]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-20.59.47:334][940]LogNet: Join succeeded: ClaysLaptopGcu-90EC9
+[2026.11.07-20.59.47:339][940]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59235
+[2026.11.07-20.59.47:342][940]LogHandshake: SendConnectChallenge. Timestamp: 1.602203, Cookie: 012114038165074031098252019130219114049178089138185114049230
+[2026.11.07-20.59.47:570][940]LogHandshake: Cached server SessionID: 0
+[2026.11.07-20.59.47:570][940]LogHandshake: SendChallengeResponse. Timestamp: 1.602203, Cookie: 012114038165074031098252019130219114049178089138185114049230
+[2026.11.07-20.59.48:247][941]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59235
+[2026.11.07-20.59.48:247][941]LogHandshake: SendChallengeAck. InCookie: 012114038165074031098252019130219114049178089138185114049230
+[2026.11.07-20.59.48:248][941]LogNet: Server accepting post-challenge connection from: 127.0.0.1:59235
+[2026.11.07-20.59.48:249][941]LogNet: IpConnection_11 setting maximum channels to: 32767
+[2026.11.07-20.59.48:254][941]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-20.59.48:261][941]LogNet: NotifyAcceptedConnection: Name: Level_1, TimeStamp: 11/07/26 13:59:48, [UNetConnection] RemoteAddr: 127.0.0.1:59235, Name: IpConnection_11, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.59.48:261][941]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:59235, Name: IpConnection_11, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.59.48:637][941]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_9, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_10, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-20.59.48:693][942]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1: Accepted
+[2026.11.07-20.59.48:693][942]LogNet: Remote platform little endian=1
+[2026.11.07-20.59.48:693][942]LogNet: This platform little endian=1
+[2026.11.07-20.59.48:948][942]LogOnline: OSS: Created online subsystem instance for: :Context_26
+[2026.11.07-20.59.48:980][943]LogNet: Login request: ?Name=ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D userId: NULL:ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D platform: NULL
+[2026.11.07-20.59.49:024][943]LogNet: Welcomed by server (Level: /Game/Variant_Platforming/UEDPIE_0_Level_1, Game: /Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C)
+[2026.11.07-20.59.49:028][943]LogLoad: LoadMap: 127.0.0.1:17777/Game/Variant_Platforming/Level_1?game=/Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C
+[2026.11.07-20.59.49:029][943]LogWorld: BeginTearingDown for /Temp/Untitled_6
+[2026.11.07-20.59.49:036][943]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-20.59.49:038][943]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-20.59.49:111][943]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.11.07-20.59.49:127][943]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2026.11.07-20.59.49:159][943]LogAudio: Display: Audio Device (ID: 11) registered with world 'Level_1'.
+[2026.11.07-20.59.49:160][943]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.11.07-20.59.49:176][943]LogPlayLevel: PIE: World Init took: (0.016044s)
+[2026.11.07-20.59.49:190][943]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_2_Level_1.Level_1 up for play (max tick rate 60) at 2026.11.07-13.59.49
+[2026.11.07-20.59.49:191][943]LogWorld: Bringing up level for play took: 0.011769
+[2026.11.07-20.59.49:195][943]LogLoad: Took 0.167653 seconds to LoadMap(/Game/Variant_Platforming/Level_1)
+[2026.11.07-20.59.49:195][943]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Variant_Platforming/Level_1
+[2026.11.07-20.59.49:195][943]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2026.11.07-20.59.49:290][944]LogNet: Client netspeed is 100000
+[2026.11.07-20.59.49:290][944]LogNet: Join request: /Game/ThirdPerson/Lvl_ThirdPerson?Name=ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D?SplitscreenCount=1
+[2026.11.07-20.59.49:334][944]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BP_PlatformingCharacter_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_1
+	Function /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter.BP_PlatformingCharacter_C:ExecuteUbergraph_BP_PlatformingCharacter:007B
+[2026.11.07-20.59.49:337][944]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Add to Viewport Graph:  EventGraph Function:  Execute Ubergraph BP Platforming Character Blueprint:  BP_PlatformingCharacter
+[2026.11.07-20.59.49:337][944]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_1.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:00ED
+[2026.11.07-20.59.49:337][944]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-20.59.49:337][944]LogScript: Warning: Accessed None
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_1.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:0102
+[2026.11.07-20.59.49:337][944]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-20.59.49:339][944]LogNet: Join succeeded: ClaysLaptopGcu-93094
+[2026.11.07-21.00.27:625][208]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:01D7
+[2026.11.07-21.00.27:626][208]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.00.27:627][208]LogScript: Warning: Accessed None
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:01EC
+[2026.11.07-21.00.27:627][208]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.00.38:490][293]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-21.00.38:490][293]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_2_Level_1
+[2026.11.07-21.00.38:496][293]LogSlate: Window 'PlatformerGame Preview [NetMode: Client 2]  (64-bit/PC D3D SM6)' being destroyed
+[2026.11.07-21.00.38:813][293]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.00.38:826][293]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.00.38:834][293]LogNet: World NetDriver shutdown IpNetDriver_10 [GameNetDriver]
+[2026.11.07-21.00.38:834][293]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_10 
+[2026.11.07-21.00.38:837][293]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_9, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_10, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D, Channels: 23, Time: 2026.11.07-21.00.38
+[2026.11.07-21.00.38:837][293]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_9, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_10, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D
+[2026.11.07-21.00.38:841][293]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_10 shut down
+[2026.11.07-21.00.38:843][293]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_1_Level_1
+[2026.11.07-21.00.38:844][293]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-21.00.38:846][293]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.00.38:847][293]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.00.38:854][293]LogNet: World NetDriver shutdown IpNetDriver_9 [GameNetDriver]
+[2026.11.07-21.00.38:854][293]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_9 
+[2026.11.07-21.00.38:854][293]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_8, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_9, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976, Channels: 23, Time: 2026.11.07-21.00.38
+[2026.11.07-21.00.38:854][293]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_8, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_9, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976
+[2026.11.07-21.00.38:855][293]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_9 shut down
+[2026.11.07-21.00.38:855][293]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_0_Level_1
+[2026.11.07-21.00.38:860][293]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.00.38:862][293]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.00.38:863][293]LogNet: World NetDriver shutdown IpNetDriver_8 [GameNetDriver]
+[2026.11.07-21.00.38:863][293]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8 
+[2026.11.07-21.00.38:864][293]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-21.00.38:864][293]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2026.11.07-21.00.38:864][293]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-21.00.38:864][293]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2026.11.07-21.00.38:865][293]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:59235, Name: IpConnection_11, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D
+[2026.11.07-21.00.38:865][293]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:59235, Name: IpConnection_11, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D, Channels: 23, Time: 2026.11.07-21.00.38
+[2026.11.07-21.00.38:865][293]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-21.00.38:865][293]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2026.11.07-21.00.38:865][293]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:59235, Name: IpConnection_11, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D
+[2026.11.07-21.00.38:865][293]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:59235 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:59235, Name: IpConnection_11, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-9309424B4CA9DADC6D4777AF2D068C4D
+[2026.11.07-21.00.38:869][293]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:59234, Name: IpConnection_10, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976
+[2026.11.07-21.00.38:870][293]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:59234, Name: IpConnection_10, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976, Channels: 23, Time: 2026.11.07-21.00.38
+[2026.11.07-21.00.38:870][293]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-21.00.38:870][293]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2026.11.07-21.00.38:870][293]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:59234, Name: IpConnection_10, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976
+[2026.11.07-21.00.38:870][293]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:59234 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:59234, Name: IpConnection_10, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8, IsServer: YES, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-90EC982E43D35976D8E94989D4EE8976
+[2026.11.07-21.00.38:871][293]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_8 shut down
+[2026.11.07-21.00.38:871][293]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.11.07-21.00.38:913][293]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.00.38:962][293]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-21.00.38:963][293]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 11
+[2026.11.07-21.00.38:968][293]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11, StreamState=4
+[2026.11.07-21.00.38:995][293]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11, StreamState=2
+[2026.11.07-21.00.39:052][293]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 10
+[2026.11.07-21.00.39:055][293]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10, StreamState=4
+[2026.11.07-21.00.39:069][293]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10, StreamState=2
+[2026.11.07-21.00.39:153][293]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2026.11.07-21.00.39:811][294]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2026.11.07-21.00.39:818][294]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2026.11.07-21.00.39:821][294]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2026.11.07-21.00.50:499][487]LogSlate: Window 'Message Log' being destroyed
+[2026.11.07-21.00.50:692][487]LogSlate: Window 'Message Log' being destroyed
+[2026.11.07-21.01.04:527][657]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2026.11.07-21.02.24:075][963]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_16
+[2026.11.07-21.02.24:694][966]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_17
+[2026.11.07-21.02.25:250][967]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_18
+[2026.11.07-21.02.34:313][ 50]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/LevelPrototyping/Interactable/JumpPad/Coin.Coin
+[2026.11.07-21.02.34:320][ 50]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_19
+[2026.11.07-21.02.41:263][117]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4552.369141
+[2026.11.07-21.02.41:592][121]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.11.07-21.02.41:593][121]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4552.617676, Update Interval: 323.176361
+[2026.11.07-21.03.55:833][705]LogUObjectHash: Compacting FUObjectHashTables data took   3.06ms
+[2026.11.07-21.03.59:734][746]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.11.07-21.03.59:768][746]LogUMGEditor: Disabling Slate Post Buffers for multi-window PIE session, currently not supported.
+[2026.11.07-21.03.59:779][746]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.11.07-21.03.59:786][746]LogPlayLevel: Creating play world package: /Game/Variant_Platforming/UEDPIE_0_Level_1
+[2026.11.07-21.03.59:814][746]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027685s)
+[2026.11.07-21.03.59:817][746]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Variant_Platforming/Level_1.Level_1 to /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1 (0.028358s)
+[2026.11.07-21.03.59:882][746]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2026.11.07-21.03.59:886][746]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.11.07-21.03.59:889][746]LogPlayLevel: PIE: World Init took: (0.003346s)
+[2026.11.07-21.03.59:892][746]LogLoad: Game class is 'BP_PlatformingGameMode_C'
+[2026.11.07-21.03.59:896][746]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1 up for play (max tick rate 60) at 2026.11.07-14.03.59
+[2026.11.07-21.03.59:904][746]LogOnline: OSS: Created online subsystem instance for: :Context_31
+[2026.11.07-21.03.59:908][746]LogWorld: Bringing up level for play took: 0.015231
+[2026.11.07-21.03.59:915][746]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2026.11.07-21.03.59:915][746]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2026.11.07-21.03.59:919][746]LogPushModel: PushModel HandleCreation is now enabled
+[2026.11.07-21.03.59:919][746]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.07-21.03.59:925][746]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2026.11.07-21.03.59:925][746]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2026.11.07-21.03.59:926][746]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-21.03.59:926][746]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11 IpNetDriver listening on port 17777
+[2026.11.07-21.03.59:931][746]PIE: Server logged in
+[2026.11.07-21.03.59:931][746]PIE: Play in editor total start time 0.164 seconds.
+[2026.11.07-21.03.59:932][746]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.11.07-21.03.59:934][746]LogPlayLevel: PIE: World Init took: (0.002973s)
+[2026.11.07-21.03.59:936][746]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2026.11.07-21.03.59:936][746]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.07-21.03.59:936][746]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.07-21.03.59:936][746]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.07-21.03.59:936][746]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.07-21.03.59:936][746]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.11.07-21.03.59:936][746]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.07-21.03.59:936][746]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.11.07-21.03.59:936][746]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.07-21.03.59:938][746]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.07-21.03.59:938][746]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.07-21.03.59:938][746]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.07-21.03.59:942][746]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.11.07-21.03.59:960][746]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+[2026.11.07-21.03.59:963][746]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.11.07-21.03.59:963][746]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.11.07-21.03.59:963][746]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.11.07-21.03.59:964][746]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=12
+[2026.11.07-21.03.59:964][746]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=12
+[2026.11.07-21.03.59:969][746]LogInit: FAudioDevice initialized with ID 12.
+[2026.11.07-21.03.59:969][746]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=12
+[2026.11.07-21.03.59:969][746]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=12
+[2026.11.07-21.03.59:969][746]LogAudio: Display: Audio Device (ID: 12) registered with world 'Untitled'.
+[2026.11.07-21.03.59:969][746]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 12
+[2026.11.07-21.03.59:989][746]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson"
+[2026.11.07-21.03.59:989][746]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson
+[2026.11.07-21.03.59:990][746]LogPushModel: PushModel HandleCreation is now enabled
+[2026.11.07-21.03.59:990][746]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.07-21.03.59:991][746]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2026.11.07-21.03.59:991][746]LogNet: Created socket for bind address: 0.0.0.0:0
+[2026.11.07-21.03.59:991][746]LogNet: IpConnection_12 setting maximum channels to: 32767
+[2026.11.07-21.03.59:992][746]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-21.03.59:992][746]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 4
+[2026.11.07-21.03.59:994][746]LogNet: Game client on port 17777, rate 100000
+[2026.11.07-21.03.59:996][746]PIE: Client logged in
+[2026.11.07-21.03.59:999][746]PIE: Play in editor total start time 0.232 seconds.
+[2026.11.07-21.03.59:999][746]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.11.07-21.04.00:003][746]LogPlayLevel: PIE: World Init took: (0.003253s)
+[2026.11.07-21.04.00:004][746]LogAudio: Display: Creating Audio Device:                 Id: 13, Scope: Unique, Realtime: True
+[2026.11.07-21.04.00:004][746]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.07-21.04.00:004][746]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.07-21.04.00:004][746]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.07-21.04.00:004][746]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.07-21.04.00:004][746]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.11.07-21.04.00:004][746]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.07-21.04.00:004][746]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.11.07-21.04.00:004][746]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.07-21.04.00:004][746]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.07-21.04.00:004][746]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.07-21.04.00:004][746]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.07-21.04.00:008][746]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.11.07-21.04.00:021][746]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Qualcomm(R) Aqstic(TM) Audio Adapter Device)
+[2026.11.07-21.04.00:021][746]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.11.07-21.04.00:023][746]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.11.07-21.04.00:023][746]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.11.07-21.04.00:024][746]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=13
+[2026.11.07-21.04.00:024][746]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=13
+[2026.11.07-21.04.00:029][746]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=13
+[2026.11.07-21.04.00:029][746]LogInit: FAudioDevice initialized with ID 13.
+[2026.11.07-21.04.00:029][746]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=13
+[2026.11.07-21.04.00:029][746]LogAudio: Display: Audio Device (ID: 13) registered with world 'Untitled'.
+[2026.11.07-21.04.00:029][746]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 13
+[2026.11.07-21.04.00:090][746]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-21.04.00:092][746]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson"
+[2026.11.07-21.04.00:092][746]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPerson/Lvl_ThirdPerson
+[2026.11.07-21.04.00:092][746]LogPushModel: PushModel HandleCreation is now enabled
+[2026.11.07-21.04.00:092][746]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.07-21.04.00:093][746]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2026.11.07-21.04.00:093][746]LogNet: Created socket for bind address: 0.0.0.0:0
+[2026.11.07-21.04.00:093][746]LogNet: IpConnection_13 setting maximum channels to: 32767
+[2026.11.07-21.04.00:093][746]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-21.04.00:094][746]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 5
+[2026.11.07-21.04.00:094][746]LogNet: Game client on port 17777, rate 100000
+[2026.11.07-21.04.00:105][746]PIE: Client logged in
+[2026.11.07-21.04.00:111][746]PIE: Play in editor total start time 0.345 seconds.
+[2026.11.07-21.04.01:028][780]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62835
+[2026.11.07-21.04.01:028][780]LogHandshake: SendConnectChallenge. Timestamp: 1.625398, Cookie: 254072106131141154203163033243099190058094151001187001142070
+[2026.11.07-21.04.01:028][780]LogHandshake: Cached server SessionID: 0
+[2026.11.07-21.04.01:028][780]LogHandshake: SendChallengeResponse. Timestamp: 1.625398, Cookie: 254072106131141154203163033243099190058094151001187001142070
+[2026.11.07-21.04.01:050][781]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62835
+[2026.11.07-21.04.01:050][781]LogHandshake: SendChallengeAck. InCookie: 254072106131141154203163033243099190058094151001187001142070
+[2026.11.07-21.04.01:050][781]LogNet: Server accepting post-challenge connection from: 127.0.0.1:62835
+[2026.11.07-21.04.01:050][781]LogNet: IpConnection_14 setting maximum channels to: 32767
+[2026.11.07-21.04.01:050][781]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-21.04.01:051][781]LogNet: NotifyAcceptedConnection: Name: Level_1, TimeStamp: 11/07/26 14:04:01, [UNetConnection] RemoteAddr: 127.0.0.1:62835, Name: IpConnection_14, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-21.04.01:051][781]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:62835, Name: IpConnection_14, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-21.04.01:053][781]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_12, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_12, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-21.04.01:077][782]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1: Accepted
+[2026.11.07-21.04.01:077][782]LogNet: Remote platform little endian=1
+[2026.11.07-21.04.01:077][782]LogNet: This platform little endian=1
+[2026.11.07-21.04.01:084][782]LogOnline: OSS: Created online subsystem instance for: :Context_32
+[2026.11.07-21.04.01:107][783]LogNet: Login request: ?Name=ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C userId: NULL:ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C platform: NULL
+[2026.11.07-21.04.01:109][783]LogNet: Welcomed by server (Level: /Game/Variant_Platforming/UEDPIE_0_Level_1, Game: /Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C)
+[2026.11.07-21.04.01:109][783]LogLoad: LoadMap: 127.0.0.1:17777/Game/Variant_Platforming/Level_1?game=/Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C
+[2026.11.07-21.04.01:109][783]LogWorld: BeginTearingDown for /Temp/Untitled_7
+[2026.11.07-21.04.01:110][783]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.04.01:110][783]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.04.01:141][783]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.11.07-21.04.01:145][783]LogUObjectHash: Compacting FUObjectHashTables data took   1.53ms
+[2026.11.07-21.04.01:157][783]LogAudio: Display: Audio Device (ID: 12) registered with world 'Level_1'.
+[2026.11.07-21.04.01:157][783]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.11.07-21.04.01:160][783]LogPlayLevel: PIE: World Init took: (0.002432s)
+[2026.11.07-21.04.01:163][783]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_1_Level_1.Level_1 up for play (max tick rate 60) at 2026.11.07-14.04.01
+[2026.11.07-21.04.01:163][783]LogWorld: Bringing up level for play took: 0.003126
+[2026.11.07-21.04.01:163][783]LogLoad: Took 0.054788 seconds to LoadMap(/Game/Variant_Platforming/Level_1)
+[2026.11.07-21.04.01:163][783]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Variant_Platforming/Level_1
+[2026.11.07-21.04.01:163][783]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2026.11.07-21.04.01:196][784]LogNet: Client netspeed is 100000
+[2026.11.07-21.04.01:197][784]LogNet: Join request: /Game/ThirdPerson/Lvl_ThirdPerson?Name=ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C?SplitscreenCount=1
+[2026.11.07-21.04.01:208][784]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BP_PlatformingCharacter_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0
+	Function /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter.BP_PlatformingCharacter_C:ExecuteUbergraph_BP_PlatformingCharacter:007B
+[2026.11.07-21.04.01:208][784]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Add to Viewport Graph:  EventGraph Function:  Execute Ubergraph BP Platforming Character Blueprint:  BP_PlatformingCharacter
+[2026.11.07-21.04.01:208][784]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:00ED
+[2026.11.07-21.04.01:208][784]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.01:208][784]LogScript: Warning: Accessed None
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:0102
+[2026.11.07-21.04.01:208][784]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.01:210][784]LogNet: Join succeeded: ClaysLaptopGcu-42B4C
+[2026.11.07-21.04.01:210][784]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62836
+[2026.11.07-21.04.01:210][784]LogHandshake: SendConnectChallenge. Timestamp: 1.790890, Cookie: 233068197018212088161157169144198038163041091092088188000104
+[2026.11.07-21.04.01:217][784]LogHandshake: Cached server SessionID: 0
+[2026.11.07-21.04.01:217][784]LogHandshake: SendChallengeResponse. Timestamp: 1.790890, Cookie: 233068197018212088161157169144198038163041091092088188000104
+[2026.11.07-21.04.01:719][785]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62836
+[2026.11.07-21.04.01:719][785]LogHandshake: SendChallengeAck. InCookie: 233068197018212088161157169144198038163041091092088188000104
+[2026.11.07-21.04.01:719][785]LogNet: Server accepting post-challenge connection from: 127.0.0.1:62836
+[2026.11.07-21.04.01:719][785]LogNet: IpConnection_15 setting maximum channels to: 32767
+[2026.11.07-21.04.01:719][785]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.07-21.04.01:720][785]LogNet: NotifyAcceptedConnection: Name: Level_1, TimeStamp: 11/07/26 14:04:01, [UNetConnection] RemoteAddr: 127.0.0.1:62836, Name: IpConnection_15, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-21.04.01:720][785]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:62836, Name: IpConnection_15, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-21.04.01:746][785]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_13, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_13, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.07-21.04.01:828][786]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1: Accepted
+[2026.11.07-21.04.01:829][786]LogNet: Remote platform little endian=1
+[2026.11.07-21.04.01:829][786]LogNet: This platform little endian=1
+[2026.11.07-21.04.01:837][786]LogOnline: OSS: Created online subsystem instance for: :Context_33
+[2026.11.07-21.04.02:057][787]LogNet: Login request: ?Name=ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8 userId: NULL:ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8 platform: NULL
+[2026.11.07-21.04.02:062][787]LogNet: Welcomed by server (Level: /Game/Variant_Platforming/UEDPIE_0_Level_1, Game: /Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C)
+[2026.11.07-21.04.02:062][787]LogLoad: LoadMap: 127.0.0.1:17777/Game/Variant_Platforming/Level_1?game=/Game/Variant_Platforming/Blueprints/BP_PlatformingGameMode.BP_PlatformingGameMode_C
+[2026.11.07-21.04.02:062][787]LogWorld: BeginTearingDown for /Temp/Untitled_8
+[2026.11.07-21.04.02:063][787]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.04.02:063][787]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.04.02:100][787]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.11.07-21.04.02:129][787]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2026.11.07-21.04.02:186][787]LogAudio: Display: Audio Device (ID: 13) registered with world 'Level_1'.
+[2026.11.07-21.04.02:187][787]LogChaosDD: Creating Chaos Debug Draw Scene for world Level_1
+[2026.11.07-21.04.02:190][787]LogPlayLevel: PIE: World Init took: (0.003091s)
+[2026.11.07-21.04.02:196][787]LogWorld: Bringing World /Game/Variant_Platforming/UEDPIE_2_Level_1.Level_1 up for play (max tick rate 60) at 2026.11.07-14.04.02
+[2026.11.07-21.04.02:197][787]LogWorld: Bringing up level for play took: 0.006315
+[2026.11.07-21.04.02:197][787]LogLoad: Took 0.135229 seconds to LoadMap(/Game/Variant_Platforming/Level_1)
+[2026.11.07-21.04.02:197][787]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Variant_Platforming/Level_1
+[2026.11.07-21.04.02:198][787]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2026.11.07-21.04.02:231][788]LogNet: Client netspeed is 100000
+[2026.11.07-21.04.02:231][788]LogNet: Join request: /Game/ThirdPerson/Lvl_ThirdPerson?Name=ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8?SplitscreenCount=1
+[2026.11.07-21.04.02:243][788]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BP_PlatformingCharacter_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_1
+	Function /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter.BP_PlatformingCharacter_C:ExecuteUbergraph_BP_PlatformingCharacter:007B
+[2026.11.07-21.04.02:243][788]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Add to Viewport Graph:  EventGraph Function:  Execute Ubergraph BP Platforming Character Blueprint:  BP_PlatformingCharacter
+[2026.11.07-21.04.02:243][788]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_1.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:00ED
+[2026.11.07-21.04.02:243][788]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.02:243][788]LogScript: Warning: Accessed None
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_1.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:0102
+[2026.11.07-21.04.02:243][788]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.02:244][788]LogNet: Join succeeded: ClaysLaptopGcu-2E678
+[2026.11.07-21.04.38:911][ 35]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:01D7
+[2026.11.07-21.04.38:915][ 35]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.38:916][ 35]LogScript: Warning: Accessed None
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:01EC
+[2026.11.07-21.04.38:916][ 35]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.49:996][144]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:01D7
+[2026.11.07-21.04.49:996][144]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.49:996][144]LogScript: Warning: Accessed None
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:01EC
+[2026.11.07-21.04.49:996][144]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.56:340][212]LogScript: Warning: Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:01D7
+[2026.11.07-21.04.56:341][212]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.04.56:342][212]LogScript: Warning: Accessed None
+	BPC_Stat_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0.BPC_Stat
+	Function /Game/Input/BPC_Stat.BPC_Stat_C:ExecuteUbergraph_BPC_Stat:01EC
+[2026.11.07-21.04.56:342][212]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  EventGraph Function:  Execute Ubergraph BPC Stat Blueprint:  BPC_Stat
+[2026.11.07-21.05.05:811][312]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property HUDREF in BP_PlatformingCharacter_C". Node:  Set Text Graph:  DecreaseHP Function:  Decrease HP Blueprint:  BPC_Stat
+[2026.11.07-21.05.05:811][312]PIE: Error: Blueprint Runtime Error: "Accessed None". Node:  Set Text Graph:  DecreaseHP Function:  Decrease HP Blueprint:  BPC_Stat
+[2026.11.07-21.05.05:813][312]LogScript: Warning: Accessed None trying to read (real) property CallFunc_Create_ReturnValue in not an UClass
+	BP_PlatformingCharacter_C /Game/Variant_Platforming/UEDPIE_0_Level_1.Level_1:PersistentLevel.BP_PlatformingCharacter_C_0
+	Function /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter.BP_PlatformingCharacter_C:Death:0109
+[2026.11.07-21.05.05:816][312]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read (real) property CallFunc_Create_ReturnValue in not an UClass". Node:  Add to Viewport Graph:  Death Function:  Death Blueprint:  BP_PlatformingCharacter
+[2026.11.07-21.05.08:668][345]Cmd: restartlevel
+[2026.11.07-21.05.10:097][362]Cmd: exit
+[2026.11.07-21.05.10:102][362]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-21.05.10:112][362]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-21.05.10:112][362]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_2_Level_1
+[2026.11.07-21.05.10:115][362]LogSlate: Window 'PlatformerGame Preview [NetMode: Client 2]  (64-bit/PC D3D SM6)' being destroyed
+[2026.11.07-21.05.10:309][362]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.05.10:314][362]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.05.10:331][362]LogNet: World NetDriver shutdown IpNetDriver_13 [GameNetDriver]
+[2026.11.07-21.05.10:333][362]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_13 
+[2026.11.07-21.05.10:333][362]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_13, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_13, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8, Channels: 11, Time: 2026.11.07-21.05.10
+[2026.11.07-21.05.10:333][362]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_13, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_13, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8
+[2026.11.07-21.05.10:334][362]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_13 shut down
+[2026.11.07-21.05.10:334][362]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_1_Level_1
+[2026.11.07-21.05.10:336][362]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.05.10:338][362]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.05.10:342][362]LogNet: World NetDriver shutdown IpNetDriver_12 [GameNetDriver]
+[2026.11.07-21.05.10:342][362]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_12 
+[2026.11.07-21.05.10:342][362]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_12, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_12, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C, Channels: 11, Time: 2026.11.07-21.05.10
+[2026.11.07-21.05.10:342][362]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_12, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_12, IsServer: NO, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C
+[2026.11.07-21.05.10:342][362]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_12 shut down
+[2026.11.07-21.05.10:342][362]LogWorld: BeginTearingDown for /Game/Variant_Platforming/UEDPIE_0_Level_1
+[2026.11.07-21.05.10:350][362]LogWorld: UWorld::CleanupWorld for Level_1, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.05.10:353][362]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.05.10:462][362]LogNet: World NetDriver shutdown IpNetDriver_11 [GameNetDriver]
+[2026.11.07-21.05.10:462][362]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11 
+[2026.11.07-21.05.10:464][362]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-21.05.10:464][362]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2026.11.07-21.05.10:464][362]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-21.05.10:465][362]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2026.11.07-21.05.10:465][362]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:62836, Name: IpConnection_15, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8
+[2026.11.07-21.05.10:465][362]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:62836, Name: IpConnection_15, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8, Channels: 11, Time: 2026.11.07-21.05.10
+[2026.11.07-21.05.10:465][362]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-21.05.10:465][362]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2026.11.07-21.05.10:465][362]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:62836, Name: IpConnection_15, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8
+[2026.11.07-21.05.10:465][362]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:62836 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:62836, Name: IpConnection_15, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: BP_PlatformingPlayerController_C_1, Owner: BP_PlatformingPlayerController_C_1, UniqueId: NULL:ClaysLaptopGcu-2E678FF044E646AF027EAD964A6D7DB8
+[2026.11.07-21.05.10:467][362]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:62835, Name: IpConnection_14, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C
+[2026.11.07-21.05.10:467][362]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:62835, Name: IpConnection_14, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C, Channels: 11, Time: 2026.11.07-21.05.10
+[2026.11.07-21.05.10:467][362]LogNet: UNetConnection::SendCloseReason:
+[2026.11.07-21.05.10:467][362]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2026.11.07-21.05.10:467][362]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:62835, Name: IpConnection_14, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C
+[2026.11.07-21.05.10:467][362]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:62835 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:62835, Name: IpConnection_14, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11, IsServer: YES, PC: BP_PlatformingPlayerController_C_0, Owner: BP_PlatformingPlayerController_C_0, UniqueId: NULL:ClaysLaptopGcu-42B4C8FE46D21FDD8BB7489BEA15D19C
+[2026.11.07-21.05.10:468][362]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11 shut down
+[2026.11.07-21.05.10:468][362]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.11.07-21.05.10:492][362]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.05.10:550][362]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 13
+[2026.11.07-21.05.10:553][362]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13, StreamState=4
+[2026.11.07-21.05.10:577][362]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13, StreamState=2
+[2026.11.07-21.05.10:624][362]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-21.05.10:626][362]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 12
+[2026.11.07-21.05.10:627][362]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12, StreamState=4
+[2026.11.07-21.05.10:649][362]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12, StreamState=2
+[2026.11.07-21.05.10:711][362]LogUObjectHash: Compacting FUObjectHashTables data took  22.76ms
+[2026.11.07-21.05.11:345][363]LogPlayLevel: Display: Destroying online subsystem :Context_33
+[2026.11.07-21.05.11:369][363]LogPlayLevel: Display: Destroying online subsystem :Context_32
+[2026.11.07-21.05.11:372][363]LogPlayLevel: Display: Destroying online subsystem :Context_31
+[2026.11.07-21.06.38:026][544]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2026.11.07-21.07.18:026][ 80]LogSlate: Window 'Coin' being destroyed
+[2026.11.07-21.07.18:212][ 80]LogSlate: Window 'Coin' being destroyed
+[2026.11.07-21.07.18:250][ 80]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.07.18:251][ 80]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.07.18:576][ 80]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2026.11.07-21.07.18:578][ 80]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.07.18:578][ 80]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.07.18:710][ 80]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2026.11.07-21.07.18:710][ 80]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.07.18:710][ 80]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.07.18:816][ 80]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2026.11.07-21.07.18:817][ 80]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-21.07.18:817][ 80]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-21.07.18:942][ 80]LogUObjectHash: Compacting FUObjectHashTables data took   2.50ms
+[2026.11.07-21.07.19:965][ 96]LogSlate: Window 'Message Log' being destroyed
+[2026.11.07-21.07.20:163][ 96]LogSlate: Window 'Message Log' being destroyed
+[2026.11.07-21.07.49:562][245]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2026.11.07-21.07.49:565][245]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Variant_Platforming/Level_1' took 0.085
+[2026.11.07-21.07.49:573][245]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/LevelPrototyping/Interactable/JumpPad/Coin] ([2] browsable assets)...
+[2026.11.07-21.07.50:160][245]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/LevelPrototyping/Interactable/JumpPad/Coin.Coin]
+[2026.11.07-21.07.50:162][245]OBJ SavePackage: Finished generating thumbnails for package [/Game/LevelPrototyping/Interactable/JumpPad/Coin]
+[2026.11.07-21.07.50:280][245]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/LevelPrototyping/Interactable/JumpPad/Coin_Auto4
+[2026.11.07-21.07.50:280][245]LogSavePackage: Moving '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/Coin_Auto4C9ABC22249A287631AE4C391CF390822.tmp' to '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/Autosaves/Game/LevelPrototyping/Interactable/JumpPad/Coin_Auto4.uasset'
+[2026.11.07-21.07.50:297][245]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter] ([2] browsable assets)...
+[2026.11.07-21.07.50:354][245]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter.BP_PlatformingCharacter]
+[2026.11.07-21.07.50:355][245]OBJ SavePackage: Finished generating thumbnails for package [/Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter]
+[2026.11.07-21.07.50:481][245]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter_Auto4
+[2026.11.07-21.07.50:481][245]LogSavePackage: Moving '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/BP_PlatformingCharacter_Auto4843DE8FB48350038FABC04BF3927B8C1.tmp' to '../../../../../../Users/clayk/Documents/Unreal Projects/PlatformerGame/Saved/Autosaves/Game/Variant_Platforming/Blueprints/BP_PlatformingCharacter_Auto4.uasset'
+[2026.11.07-21.07.50:484][245]LogFileHelpers: Auto-saving content packages took 0.918
+[2026.11.07-21.08.57:566][447]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4928.663086
+[2026.11.07-21.08.58:569][450]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.11.07-21.08.58:569][450]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4929.337402, Update Interval: 344.164551
+[2026.11.07-21.15.41:664][660]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 5332.766113
+[2026.11.07-21.15.42:664][662]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.11.07-21.15.42:665][662]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 5333.435059, Update Interval: 333.525818
